@@ -10,9 +10,9 @@ $( document ).ready(function() {
         var day = $('#daypicker select').val();
         if (day !== '-') {
             if (Number(day) % 2 === 0) {
-                window.location.href = '/tutorials/code.html';
+                window.location.href = '/experiment/tutorials/code.html';
             } else {
-                window.location.href = '/tutorials/docker.html';
+                window.location.href = '/experiment/tutorials/docker.html';
             }
         } else {
             $('#daypicker').addClass('error');

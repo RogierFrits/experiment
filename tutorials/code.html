@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Experiment: Repeating Computational Research">
+    <meta name="author" content="Rogier Mars">
+
+    <title>Tutorial</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/jumbotron-narrow.css" rel="stylesheet">
+
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+    <div class="header clearfix">
+        <nav>
+            <ul class="nav nav-pills pull-right">
+                <li class="active" role="presentation"><a href="../">Back</a></li>
+            </ul>
+        </nav>
+        <h3 class="text-muted">Experiment: Repeating Computational Research</h3>
+    </div>
+
+    <div class="row info">
+        <div class="col-lg-12">
+            <h4>Before the tutorial</h4>
+            <p>Remember the <strong>amount of time</strong> you spend on the tutorial.</p>
+
+            <h4>After the tutorial</h4>
+            <p>
+                Afterwards, please answer the following questions: <a href="https://goo.gl/forms/kbPXBg954U4uDPYD2">https://goo.gl/forms/EDi73Jcw9VxRT4vH3</a>
+            </p>
+        </div>
+    </div>
+
+    <div style="text-align: left;" class="jumbotron">
+        <h2>Tutorial</h2>
+        <ol>
+            <li>Download or clone <a target="_blank" href="https://github.com/RogierFrits/ReScience-Entry-Topalidou-Rougier-2015">https://github.com/RogierFrits/ReScience-Entry-Topalidou-Rougier-2015</a> to your local computer.</li>
+            <li>Read the <strong>README.md</strong> of the <strong>code</strong> directory.</li>
+            <li>Download and install <strong>python</strong> if you don’t have it already.</li>
+            <li>Download <strong>pip</strong>.</li>
+            <li>Download the project requirements: <strong>numpy</strong>, <strong>cython</strong> and <strong>matplotlib</strong> as
+                described in the README.md file.</li>
+            <li>Open the <strong>code</strong> directory in a terminal and compile the project with:<br/><code>python setup.py build_ext --inplace</code></li>
+            <li>Delete <strong>figure-1.pdf</strong> from the <strong>code</strong> directory.</li>
+            <li>
+                <ul>
+                    <li>Open terminal</li>
+                    <li>Go to <strong>code</strong> directory of the project</li>
+                    <li>Generate <strong>figure-1.pdf</strong> with the command:<br/><code>python single-trial.py</code></li>
+                </ul>
+            <li>Confirm by inspecting the generated PDF file.</li>
+        </ol>
+        <br/>
+        <span>Congratulations! Please answer the questions now.</span>
+        <br/><br/>
+        <span>Tip: to clean up your computer, you can also uninstall with pip.</span>
+    </div>
+
+    <footer class="footer">
+        <p>Contact: Rogier Mars - rogier.mars@student.vu.nl</p>
+    </footer>
+</div> <!-- /container -->
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>

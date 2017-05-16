@@ -1,1 +1,70 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Experiment: Repeating Computational Research">
+    <meta name="author" content="Rogier Mars">
+
+    <title>Experiment</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header clearfix">
+            <h3 class="text-muted">Experiment: Repeating Computational Research</h3>
+        </div>
+
+        <div class="row info">
+            <div class="col-lg-6">
+                <h4>Target Audience</h4>
+                <p>Researchers and students involved with computational research. Some command-line experience is recommended, but not required.</p>
+
+                <h4>Why join?</h4>
+                <p>By joining this experiment you contribute to an ongoing Master Thesis project carried out at the Vrije Universiteit. If you have any questions or request more information, please use the e-mail below.</p>
+            </div>
+
+            <div class="col-lg-6">
+                <h4>Technical Requirements</h4>
+                <ul>
+                    <li>Computer with Linux or MacOS operating system</li>
+                    <li>Computer with super user (admin) rights</li>
+                </ul>
+
+                <img src="Vrije-Universiteit-Amsterdam-logo.jpg" alt="logo Vrije Universiteit Amsterdam" />
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <p class="lead">The urge is high! As you were reading in an old journal of Neurophysiology from 2013 <strong>you have a brilliant new insight</strong> on the model for ‘Interaction between cognitive and motor cortico-basal ganglia loops during decision making’ by M. Guthrie, A Leblois, A. Garenne, T. Boraud.</p>
+            <p>Luckily for you, the <strong>code for this model</strong> has recently been uploaded to GitHub. You found a splendid tutorial and decide to stick to that approach. <strong>You first want to successfully run the existing code</strong> before making the changes of your brilliant new insight.</p>
+            <p>You decide to spend around <strong>25 minutes</strong> on this, using Google is allowed. <strong>After that you will report your findings by answering a few questions</strong>. If you are really stuck and want to give up please remember the step you’ve reached and time it took you. Then continue answering the questions as well.</p>
+            <br/>
+            <div id="daypicker" class="">
+                <label>Before we start, what day of the month were you born?</label>
+                <select>
+                    <option value="-">-</option>
+                </select>
+            </div>
+            <p><button id="startbutton" class="btn btn-lg btn-success">START</button></p>
+        </div>
+
+        <footer class="footer">
+            <p>Contact: Rogier Mars - rogier.mars@student.vu.nl</p>
+        </footer>
+    </div> <!-- /container -->
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>

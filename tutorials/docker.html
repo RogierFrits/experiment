@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Experiment: Repeating Computational Research">
+    <meta name="author" content="Rogier Mars">
+
+    <title>Tutorial</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/jumbotron-narrow.css" rel="stylesheet">
+
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+    <div class="header clearfix">
+        <nav>
+            <ul class="nav nav-pills pull-right">
+                <li class="active" role="presentation"><a href="../">Back</a></li>
+            </ul>
+        </nav>
+        <h3 class="text-muted">Experiment: Repeating Computational Research</h3>
+    </div>
+
+    <div class="row info">
+        <div class="col-lg-12">
+            <h4>Before the tutorial</h4>
+            <p>Remember the <strong>amount of time</strong> you spend on the tutorial.</p>
+
+            <h4>After the tutorial</h4>
+            <p>
+                Afterwards, please answer the following questions: <a href="https://goo.gl/forms/e6ve7CYQCc7wmZGm2">https://goo.gl/forms/e6ve7CYQCc7wmZGm2</a>
+            </p>
+        </div>
+    </div>
+
+    <div style="text-align: left;" class="jumbotron">
+        <h2>Tutorial</h2>
+        <ol>
+            <li>Download or clone <a target="_blank" href="https://github.com/RogierFrits/ReScience-Entry-Topalidou-Rougier-2015-2">https://github.com/RogierFrits/ReScience-Entry-Topalidou-Rougier-2015-2</a> to your local computer.</li>
+            <li>Read the README.md of the <strong>code</strong> and <strong>docker</strong> directory.</li>
+            <li>Download and install <strong>Docker</strong> if you don’t have it already. (Link is in the README of the docker directory)</li>
+            <li>First we are going to create the base Docker container. Open a terminal and go to the <strong>docker/base</strong> directory of the project. Apply the following command:<br /><code>docker build –t topalidou-rougier-2015-base .</code> (The dot refers to the Dockerfile)</li>
+            <li>Type <code>docker images</code> to see the images. This should now list <strong>ubuntu</strong> and <strong>topalidou-rougier-2015-base</strong>.</li>
+            <li>Now we are going to build the release container. Open a terminal and go to the <strong>root</strong> of the project. Apply the command:<br /><code>docker build –t topalidou-rougier-2015 .</code> (mind the dot)</li>
+            <li><code>docker images</code> should now also list <strong>topalidou-rougier-2015</strong>.</li>
+            <li>Let’s run the container:<br /><code>docker run –it topalidou-rougier-2015</code></li>
+            <li>Type <code>ls</code> to see the files and folders.</li>
+            <li>Remove <strong>figure-1.pdf</strong> with <code>rm figure-1.pdf</code> and confirm with <code>ls</code>.</li>
+            <li>Generate figure-1.pdf with:<br /><code>python single-trial.py</code> and confirm with <code>ls</code>.</li>
+        </ol>
+        <br/>
+        <span>Congratulations! Please answer the questions now.</span>
+        <br /><br />
+        <span>Tips: you can exit the container by typing <code>exit</code>. You can remove the images with the <code>docker rmi</code> command.</span>
+    </div>
+
+    <footer class="footer">
+        <p>Contact: Rogier Mars - rogier.mars@student.vu.nl</p>
+    </footer>
+</div> <!-- /container -->
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>

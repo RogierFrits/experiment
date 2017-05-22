@@ -1,5 +1,13 @@
+.jumbotron .lead {
+    font-weight: bold;
+}
+
 .jumbotron p {
     font-size: 18px;
+}
+
+.lead-image {
+    margin-top: -40px;
 }
 
 #daypicker {

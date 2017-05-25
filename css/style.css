@@ -1,13 +1,40 @@
-.jumbotron .lead {
-    font-weight: bold;
+.jumbotron {
+    text-align: left;
 }
 
 .jumbotron p {
     font-size: 18px;
 }
 
-.lead-image {
-    margin-top: -40px;
+.jumbotron .text {
+    height: 210px;
+}
+
+.scenario-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+}
+
+.scenario-image.one {
+    margin: 40px 0 0 0;
+    background-image: url('../img/scenario-professor.png');
+    background-size: 110%;
+    background-color: white;
+}
+
+.scenario-image.two {
+    margin: -5px 0 0 0;
+    background-image: url('../img/scenario-github.png');
+    background-color: white;
+}
+
+.scenario-image.three {
+    margin: 0 0 0 0;
+    background-image: url('../img/scenario-hands-on.png');
 }
 
 #daypicker {
@@ -17,4 +44,10 @@
 
 #daypicker.error {
     border: 1px solid red;
+}
+
+.one-edge-shadow {
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
 }

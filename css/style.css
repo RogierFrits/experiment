@@ -7,7 +7,7 @@
 }
 
 .jumbotron .text {
-    height: 210px;
+    margin-bottom: 35px;
 }
 
 .scenario-image {
@@ -20,7 +20,7 @@
 }
 
 .scenario-image.one {
-    margin: 40px 0 0 0;
+    margin: 50px 0 0 0;
     background-image: url('../img/scenario-professor.png');
     background-size: 110%;
     background-color: white;

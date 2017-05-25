@@ -6,7 +6,7 @@
     font-size: 18px;
 }
 
-.jumbotron .text {
+.jumbotron .text, .jumbotron .title {
     margin-bottom: 35px;
 }
 
@@ -20,14 +20,14 @@
 }
 
 .scenario-image.one {
-    margin: 50px 0 0 0;
+    margin: 58px 0 0 0;
     background-image: url('../img/scenario-professor.png');
     background-size: 110%;
     background-color: white;
 }
 
 .scenario-image.two {
-    margin: -5px 0 0 0;
+    margin: -15px 0 0 0;
     background-image: url('../img/scenario-github.png');
     background-color: white;
 }

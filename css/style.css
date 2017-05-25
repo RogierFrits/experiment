@@ -46,6 +46,10 @@
     border: 1px solid red;
 }
 
+#startbutton {
+    margin-top: -10px;
+}
+
 .one-edge-shadow {
     -webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;

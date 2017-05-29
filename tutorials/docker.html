@@ -59,7 +59,7 @@
             <li>Download or clone <a target="_blank" href="https://github.com/RogierFrits/ReScience-Entry-Topalidou-Rougier-2015-2">https://github.com/RogierFrits/ReScience-Entry-Topalidou-Rougier-2015-2</a> to your local computer.</li>
             <li>Read the README.md of the <strong>code</strong> and <strong>docker</strong> directory.</li>
             <li>Download and install <strong>Docker</strong> if you don’t have it already. (Link is in the README of the docker directory)</li>
-            <li>First we are going to create the base Docker container. Open a terminal and go to the <strong>docker/base</strong> directory of the project. Apply the following command:<br /><code>docker build –t topalidou-rougier-2015-base .</code> (The dot refers to the Dockerfile)</li>
+            <li>First we are going to create the base Docker container. Open a terminal and go to the <strong>docker/base</strong> directory of the project. Apply the following command:<br /><code>docker build –t topalidou-rougier-2015-base .</code><br/>(Tip 1: The dot refers to the Dockerfile)<br />(Tip 2: If copy/paste doesn't work, type it yourself.)</li>
             <li>Type <code>docker images</code> to see the images. This should now list <strong>ubuntu</strong> and <strong>topalidou-rougier-2015-base</strong>.</li>
             <li>Now we are going to build the release container. Open a terminal and go to the <strong>root</strong> of the project. Apply the command:<br /><code>docker build –t topalidou-rougier-2015 .</code> (mind the dot)</li>
             <li><code>docker images</code> should now also list <strong>topalidou-rougier-2015</strong>.</li>
